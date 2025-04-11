@@ -41,11 +41,11 @@ When the mod's page has been opened, just click on the subscribe button to insta
 Click this [link](https://steamcommunity.com/sharedfiles/filedetails/?id=3461991101) to visit the page
 
 ## Manual installation
-Head to the release tab here on github and download the zip file. Extract it and copt the whole folder. Head to:
+Head to the release tab here on github and download the zip file. Extract it, copy it and head to:
 ```
-C:\Users\YOURUSER\Zomboid
+C:\Users\YOURUSER\Zomboid\mods
 ```
-and navigate to your mods folder. Once you are inside of it, paste the folder you prevously extracted and copied. 
+and paste it inside.
 
 # How to enable the mod in-game
 Once opened, head to the mods section of the main menu.\
