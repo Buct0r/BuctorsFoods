@@ -1,0 +1,64 @@
+module Base
+{
+
+    recipe Open Bakery Bag
+    {
+        BakeryBag,
+
+        Result:PaperBag,
+        Time:20.0,
+        Category:Cooking,
+        OnCreate:Recipe.OnCreate.GiveBaked,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+    }
+
+    recipe Make Pizza Rossa
+    {
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+       keep RollingPin,
+       Water=3,
+       [Recipe.GetItemTypes.Flour]=2,
+       Salt;2,
+       Yeast,
+	   [Recipe.GetItemTypes.Oil];3,
+	   [Recipe.GetItemTypes.PizzaSauce];15,
+
+       Result:PizzaRossa,
+       Time:60.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking10,
+    }
+
+    recipe Make Pizzette
+	{
+	   keep Spatula/[Recipe.GetItemTypes.Spoon]/[Recipe.GetItemTypes.Fork],
+	   keep Bowl,
+       keep RollingPin,
+       Water=2,
+       [Recipe.GetItemTypes.Flour]=1,
+       Salt;1,
+       Yeast,
+	   [Recipe.GetItemTypes.Oil];3,
+	   [Recipe.GetItemTypes.PizzaSauce];15,
+
+       Result:Pizzette,
+       Time:30.0,
+       Category:Cooking,
+       OnGiveXP:Recipe.OnGiveXP.Cooking5,
+	}
+
+    
+
+    recipe Make Focaccia
+	{
+		BreadDough,
+        [Recipe.GetItemTypes.Oil];3,
+        Salt;1,
+
+        Result:Focaccia,
+        Time: 60,
+        Category: Cooking,
+        OnGiveXP:Recipe.OnGiveXP.Cooking3,
+	}
+}

@@ -1,0 +1,10 @@
+module Base
+{
+    model BakeryBag_Ground
+    {
+        mesh = WorldItems/Paperbag,
+        texture = WorldItems/BakeryBag_Ground,
+        scale = 0.4,
+    }
+    
+}

@@ -1,0 +1,72 @@
+module Base
+{
+
+    item BakeryBag
+    {
+        DisplayCategory = Cooking,
+        Weight	=	0.5,
+        Type	=	Normal,
+        DisplayName	=   Bakery Bag,
+        Icon	=	BakeryBag,
+		WorldStaticModel = BakeryBag_Ground,
+    }
+
+    item PizzaRossa
+	{
+		DisplayName = Pizza Rossa,
+		DisplayCategory = Food, 
+		Type = Food,
+		Weight = 0.3,
+		Icon = PizzaRossa,
+		DaysFresh = 2,
+		DaysTotallyRotten = 5,
+		HungerChange = -25,
+        ThirstChange = 10,
+		UnhappyChange = -20,
+		Calories = 800,
+		Carbohydrates = 100,
+		Lipids = 30,
+		Proteins = 30,
+		WorldStaticModel = Pizza,
+	}
+
+    item Pizzette
+	{
+		DisplayName = Pizzette,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.3,
+		Icon = Pizzette,
+		DaysFresh = 2,
+		DaysTotallyRotten = 5,
+		HungerChange = -10,
+        ThirstChange = 7,
+		UnhappyChange = -15,
+		Calories = 580,
+		Carbohydrates = 80,
+		Lipids = 17,
+		Proteins = 21,
+		WorldStaticModel = PizzaSlice_Ground,
+	}
+
+    item Focaccia
+	{
+		DisplayName = Focaccia,
+		DisplayCategory = Food,
+		Type = Food,
+		Weight = 0.2,
+		Icon = Focaccia,
+		EvolvedRecipe = Soup:8;Stew:8;Salad:8,
+		FoodType = Bread,
+		DaysFresh = 4,
+		DaysTotallyRotten = 6,
+		HungerChange = -40,
+        ThirstChange = 5,
+        UnhappyChange = -10,
+		Calories = 600,
+		Carbohydrates = 150,
+		Lipids = 7,
+		Proteins = 20,
+		WorldStaticModel = Bread,
+	}
+}
